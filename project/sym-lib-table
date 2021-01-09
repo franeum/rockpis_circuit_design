@@ -3,4 +3,5 @@
   (lib (name ESP32-footprints-Shem-Lib)(type Legacy)(uri /home/neum/Documenti/ESP32-kiCAD-Footprints/ESP32-Footprints/ESP32-footprints-Shem-Lib.lib)(options "")(descr ""))
   (lib (name espressif-xess)(type Legacy)(uri /home/neum/Documenti/ESP32-kiCAD-Footprints/ESP32-Footprints/espressif-xess.lib)(options "")(descr ""))
   (lib (name SSD1306-128x64_OLED)(type Legacy)(uri /home/neum/Documenti/KiCad-SSD1306-128x64/library/SSD1306-128x64_OLED.lib)(options "")(descr ""))
+  (lib (name project-rescue)(type Legacy)(uri ${KIPRJMOD}/project-rescue.lib)(options "")(descr ""))
 )

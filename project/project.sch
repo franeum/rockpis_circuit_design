@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:project-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -25,7 +26,7 @@ F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_
 	1    0    0    -1  
 $EndComp
 $Comp
-L RockPi:RockPi-S U?
+L project-rescue:RockPi-S-RockPi U?
 U 1 1 5FF9F2DF
 P 7750 3550
 F 0 "U?" H 7625 4415 50  0000 C CNN
