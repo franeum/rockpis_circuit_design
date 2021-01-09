@@ -1,0 +1,93 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RF_Module:ESP32-WROOM-32 U?
+U 1 1 5FF9F0B8
+P 4200 3000
+F 0 "U?" H 4200 4578 50  0000 C CNN
+F 1 "ESP32-WROOM-32" H 4200 4487 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 4200 1500 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 3900 3050 50  0001 C CNN
+	1    4200 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L RockPi:RockPi-S U?
+U 1 1 5FF9F2DF
+P 7750 3550
+F 0 "U?" H 7625 4415 50  0000 C CNN
+F 1 "RockPi-S" H 7625 4324 50  0000 C CNN
+F 2 "" H 9600 3600 50  0001 C CNN
+F 3 "" H 9600 3600 50  0001 C CNN
+	1    7750 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L SSD1306-128x64_OLED:SSD1306 Brd?
+U 1 1 5FF9F3AC
+P 5750 1850
+F 0 "Brd?" H 6028 1953 50  0000 L CNN
+F 1 "SSD1306" H 6028 1862 50  0000 L CNN
+F 2 "" H 5750 2100 50  0001 C CNN
+F 3 "" H 5750 2100 50  0001 C CNN
+	1    5750 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ARGB D?
+U 1 1 5FF9F4C5
+P 7100 1700
+F 0 "D?" H 7100 2197 50  0000 C CNN
+F 1 "LED_ARGB" H 7100 2106 50  0000 C CNN
+F 2 "" H 7100 1650 50  0001 C CNN
+F 3 "~" H 7100 1650 50  0001 C CNN
+	1    7100 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5FF9F5B6
+P 8100 1900
+F 0 "SW?" H 8100 2185 50  0000 C CNN
+F 1 "SW_Push" H 8100 2094 50  0000 C CNN
+F 2 "" H 8100 2100 50  0001 C CNN
+F 3 "" H 8100 2100 50  0001 C CNN
+	1    8100 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 5FF9F680
+P 9000 1850
+F 0 "RV?" H 8930 1896 50  0000 R CNN
+F 1 "R_POT" H 8930 1805 50  0000 R CNN
+F 2 "" H 9000 1850 50  0001 C CNN
+F 3 "~" H 9000 1850 50  0001 C CNN
+	1    9000 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Jack-DC J?
+U 1 1 5FF9F742
+P 9900 1850
+F 0 "J?" H 9955 2175 50  0000 C CNN
+F 1 "Jack-DC" H 9955 2084 50  0000 C CNN
+F 2 "" H 9950 1810 50  0001 C CNN
+F 3 "~" H 9950 1810 50  0001 C CNN
+	1    9900 1850
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
