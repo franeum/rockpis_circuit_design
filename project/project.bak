@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:project-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -16,16 +17,16 @@ $EndDescr
 $Comp
 L RF_Module:ESP32-WROOM-32 U?
 U 1 1 5FF9F0B8
-P 4200 3000
-F 0 "U?" H 4200 4578 50  0000 C CNN
-F 1 "ESP32-WROOM-32" H 4200 4487 50  0000 C CNN
-F 2 "RF_Module:ESP32-WROOM-32" H 4200 1500 50  0001 C CNN
-F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 3900 3050 50  0001 C CNN
-	1    4200 3000
-	1    0    0    -1  
+P 3300 3000
+F 0 "U?" H 3300 4578 50  0000 C CNN
+F 1 "ESP32-WROOM-32" H 3300 4487 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 3300 1500 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 3000 3050 50  0001 C CNN
+	1    3300 3000
+	1    0    0    1   
 $EndComp
 $Comp
-L RockPi:RockPi-S U?
+L project-rescue:RockPi-S-RockPi U?
 U 1 1 5FF9F2DF
 P 7750 3550
 F 0 "U?" H 7625 4415 50  0000 C CNN
@@ -38,13 +39,13 @@ $EndComp
 $Comp
 L SSD1306-128x64_OLED:SSD1306 Brd?
 U 1 1 5FF9F3AC
-P 5750 1850
-F 0 "Brd?" H 6028 1953 50  0000 L CNN
-F 1 "SSD1306" H 6028 1862 50  0000 L CNN
-F 2 "" H 5750 2100 50  0001 C CNN
-F 3 "" H 5750 2100 50  0001 C CNN
-	1    5750 1850
-	1    0    0    -1  
+P 4900 3600
+F 0 "Brd?" H 5178 3703 50  0000 L CNN
+F 1 "SSD1306" H 5178 3612 50  0000 L CNN
+F 2 "" H 4900 3850 50  0001 C CNN
+F 3 "" H 4900 3850 50  0001 C CNN
+	1    4900 3600
+	0    1    -1   0   
 $EndComp
 $Comp
 L Device:LED_ARGB D?
@@ -71,13 +72,13 @@ $EndComp
 $Comp
 L Device:R_POT RV?
 U 1 1 5FF9F680
-P 9000 1850
-F 0 "RV?" H 8930 1896 50  0000 R CNN
-F 1 "R_POT" H 8930 1805 50  0000 R CNN
-F 2 "" H 9000 1850 50  0001 C CNN
-F 3 "~" H 9000 1850 50  0001 C CNN
-	1    9000 1850
-	1    0    0    -1  
+P 5100 1800
+F 0 "RV?" H 5030 1846 50  0000 R CNN
+F 1 "R_POT" H 5030 1755 50  0000 R CNN
+F 2 "" H 5100 1800 50  0001 C CNN
+F 3 "~" H 5100 1800 50  0001 C CNN
+	1    5100 1800
+	-1   0    0    1   
 $EndComp
 $Comp
 L Connector:Jack-DC J?
@@ -90,4 +91,57 @@ F 3 "~" H 9950 1810 50  0001 C CNN
 	1    9900 1850
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5250 3450 5600 3450
+Wire Wire Line
+	5250 3550 5600 3550
+$Comp
+L Connector:USB_B_Micro J?
+U 1 1 5FFA4D52
+P 3300 6100
+F 0 "J?" V 3402 6430 50  0000 L CNN
+F 1 "USB_B_Micro" V 3311 6430 50  0000 L CNN
+F 2 "" H 3450 6050 50  0001 C CNN
+F 3 "~" H 3450 6050 50  0001 C CNN
+	1    3300 6100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3100 5800 3100 5300
+Wire Wire Line
+	5250 3650 5400 3650
+Wire Wire Line
+	5400 3650 5400 5300
+Wire Wire Line
+	3300 4400 3300 5300
+Wire Bus Line
+	10050 5300 10050 2950
+Wire Wire Line
+	9650 2950 10050 2950
+Wire Bus Line
+	9900 5500 9900 3150
+Wire Wire Line
+	9650 3150 9900 3150
+Wire Wire Line
+	3750 6100 3900 6100
+Wire Wire Line
+	3900 6100 3900 5500
+Wire Wire Line
+	5250 3750 5250 5500
+Wire Bus Line
+	2000 5300 2000 1450
+Wire Bus Line
+	2000 1450 3300 1450
+Wire Wire Line
+	3300 1600 3300 1450
+Wire Bus Line
+	3900 5500 9900 5500
+Wire Bus Line
+	2000 5300 10050 5300
+Wire Wire Line
+	5600 4050 4300 4050
+Wire Wire Line
+	4300 4050 4300 3100
+Wire Wire Line
+	4300 3100 3900 3100
 $EndSCHEMATC
